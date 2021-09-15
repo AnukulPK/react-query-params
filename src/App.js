@@ -11,7 +11,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/comp1" component={Comp1} exact />
-          <Route path="/comp1/?name=anukul2" component={Comp2} exact />
+          <Route path="/comp2/:id" component={Comp2} />
         </Switch>
       </div>
     </Router>

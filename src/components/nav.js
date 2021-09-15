@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -14,10 +15,15 @@ const Nav = () => {
         style={{
           display: 'flex',
           justifyContent: 'space-between',
+          listStyleType: 'none',
         }}
       >
-        <li>comp1</li>
-        <li>comp2</li>
+        <Link to="/comp1">
+          <li style={{ paddingLeft: '2vw' }}>comp1</li>
+        </Link>
+        <Link to={'/comp2/' + 'anukul'}>
+          <li style={{ paddingLeft: '2vw' }}>comp2</li>
+        </Link>
       </ul>
     </nav>
   );
